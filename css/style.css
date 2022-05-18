@@ -155,7 +155,7 @@ ul {
     }
     .parallax {
         font-size: 15px;
-        margin-top: 200px;
+        margin-top: 100px;
     }
     footer {
         font-size: 12px;
@@ -165,6 +165,8 @@ ul {
         width: 5.2rem;
         height: 4rem;
     }
+
+    
 
 }
 

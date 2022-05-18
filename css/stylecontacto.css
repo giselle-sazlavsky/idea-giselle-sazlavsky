@@ -99,6 +99,11 @@ header {
     display: none;
 }
 
+.transform-transalte:hover {
+    transform: scale(1.5);
+    transition: all 2s;
+}
+
 @media screen and (max-width: 1023px) {
     header {
         flex-direction: column;
@@ -158,6 +163,10 @@ header {
     .formulario {
         overflow: hidden;
         margin-left : 5vw;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #lateral{
@@ -183,6 +192,10 @@ header {
 
     .h1_titulo {
         font-size: 12px;
+    }
+
+    main {
+        padding: 100px 50px 0px auto;
     }
     
 
