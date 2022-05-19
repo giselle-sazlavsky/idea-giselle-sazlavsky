@@ -1,0 +1,23 @@
+@media screen and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+    }
+    .header__menuHamburguesa {
+        display: none;
+    }
+    .parallax {
+        font-size: 15px;
+        margin-top: 100px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .whatsapp img {
+        width: 5.2rem;
+        height: 4rem;
+    }
+
+    
+
+}
