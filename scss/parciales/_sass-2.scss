@@ -1,0 +1,48 @@
+$redes: (
+    twitter: #55acee,
+    facebook: #3a5795,
+    youtube: #C25E30
+
+);
+
+@each $clave, $valor in $redes {
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  
+  ul li {
+    @extend ul;  
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+  
+  ul li .jam-close {
+    @extend ul;
+    display: none;
+  }
+
+  @mixin generar-flex($direction, $eje-principal, $eje-secundario) {
+      display: flex;
+      flex-direction: $direction;
+      justify-content: $eje-principal;
+      align-content: $eje-secundario;
+  }
+
+  header {
+      @include generar-flex(row, space-between, center);
+  }
+

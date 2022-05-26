@@ -80,7 +80,7 @@ header {
   padding: 1rem;
 }
 
-ul {
+ul, ul li, ul li .jam-close {
   list-style: none;
   font-size: 0;
   display: flex;
@@ -90,7 +90,7 @@ ul {
   margin-bottom: 0;
 }
 
-ul li {
+ul li, ul li .jam-close li {
   flex-direction: row;
   font-size: 1rem;
   justify-content: space-between;
@@ -140,13 +140,31 @@ ul li .jam-close {
     width: 5.2rem;
     height: 4rem;
   }
+  ul, ul li, ul li .jam-close {
+    list-style: none;
+    font-size: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 0;
+  }
+  ul li, ul li .jam-close li {
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+  ul li .jam-close {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
   h1 {
     display: none;
   }
-  ul {
+  ul, ul li, ul li .jam-close {
     display: none;
   }
   header {
@@ -189,5 +207,45 @@ ul li .jam-close {
   .jam-close {
     display: block;
   }
+}
+
+.btn-twitter {
+  background-color: #55acee;
+}
+
+.btn-facebook {
+  background-color: #3a5795;
+}
+
+.btn-youtube {
+  background-color: #C25E30;
+}
+
+ul, ul li, ul li .jam-close {
+  list-style: none;
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+ul li, ul li .jam-close li {
+  flex-direction: row;
+  font-size: 1rem;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+ul li .jam-close {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
 }
 /*# sourceMappingURL=style.css.map */
