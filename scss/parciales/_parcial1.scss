@@ -10,7 +10,7 @@ h1{
     text-align: justify;
     font-size: 32px;
     font-weight: bold;
-    line-height: 0;
+    line-height: 1;
     margin-bottom: 0;
 }
 
@@ -63,14 +63,7 @@ footer{
     text-align: center;
     padding: 1rem 1rem 1rem 1rem;
 }
-/*
-header {
-    position: fixed;
-    width: 100%;
-    background-color: gray;
-    padding: 1rem;
-  }
-*/
+
 header {
     display: flex;
     background-color: $background-header-y-footer;
@@ -90,23 +83,18 @@ ul {
     justify-content: space-between;
     padding: 1rem;
     margin-bottom: 0;
-
-    li {
-        flex-direction: row;
-        font-size: 1rem;
-        justify-content: space-between;
-        margin-left: 10px;
-
-        .jam-close {
-            display: none;
-        }
-     }
 }
 
+li {
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: space-between;
+    margin-left: 10px;
+}
 
-
-
-
+.jam-close {
+    display: none;
+}
 
 .whatsapp img {
     padding: 0.5rem 1rem;

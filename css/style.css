@@ -10,7 +10,7 @@ h1 {
   text-align: justify;
   font-size: 32px;
   font-weight: bold;
-  line-height: 0;
+  line-height: 1;
   margin-bottom: 0;
 }
 
@@ -60,14 +60,6 @@ footer {
   padding: 1rem 1rem 1rem 1rem;
 }
 
-/*
-header {
-    position: fixed;
-    width: 100%;
-    background-color: gray;
-    padding: 1rem;
-  }
-*/
 header {
   display: flex;
   background-color: grey;
@@ -80,7 +72,7 @@ header {
   padding: 1rem;
 }
 
-ul, ul li, ul li .jam-close {
+ul {
   list-style: none;
   font-size: 0;
   display: flex;
@@ -90,14 +82,14 @@ ul, ul li, ul li .jam-close {
   margin-bottom: 0;
 }
 
-ul li, ul li .jam-close li {
+li {
   flex-direction: row;
   font-size: 1rem;
   justify-content: space-between;
   margin-left: 10px;
 }
 
-ul li .jam-close {
+.jam-close {
   display: none;
 }
 
@@ -122,9 +114,6 @@ ul li .jam-close {
 }
 
 @media screen and (max-width: 1023px) {
-  header {
-    flex-direction: column;
-  }
   .header__menuHamburguesa {
     display: none;
   }
@@ -140,23 +129,9 @@ ul li .jam-close {
     width: 5.2rem;
     height: 4rem;
   }
-  ul, ul li, ul li .jam-close {
-    list-style: none;
-    font-size: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 16px;
-    margin-bottom: 0;
-  }
-  ul li, ul li .jam-close li {
-    flex-direction: row;
-    font-size: 1rem;
-    justify-content: space-between;
-    margin-left: 10px;
-  }
-  ul li .jam-close {
-    display: none;
+  header {
+    flex-direction: column;
+    padding: 0rem;
   }
 }
 
@@ -164,7 +139,7 @@ ul li .jam-close {
   h1 {
     display: none;
   }
-  ul, ul li, ul li .jam-close {
+  ul {
     display: none;
   }
   header {
@@ -221,31 +196,39 @@ ul li .jam-close {
   background-color: #C25E30;
 }
 
-ul, ul li, ul li .jam-close {
-  list-style: none;
-  font-size: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
+.parallax {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+  font-size: 30px;
+  background-image: url(https://www.aglestudio.com.ar/wp-content/uploads/2016/07/serv-contables-31.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  line-height: 2;
+  text-align: center;
+}
+
+.parallax h3 {
   margin-bottom: 0;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 2;
 }
 
-ul li, ul li .jam-close li {
-  flex-direction: row;
-  font-size: 1rem;
-  justify-content: space-between;
-  margin-left: 10px;
-}
-
-ul li .jam-close {
-  display: none;
+.parallax#boton {
+  background-color: black !important;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: normal;
+  cursor: default;
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
+  background-color: grey;
+  width: 100%;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
