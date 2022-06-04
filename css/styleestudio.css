@@ -108,6 +108,11 @@ ul {
 
     main {
         padding-top: 14rem;
+
+    }
+    .col-12 {
+        width: 100%;
+
     }
 
 }
@@ -163,3 +168,54 @@ ul {
 
 
 }
+@media screen and (max-width: 500px) {
+
+    footer {
+        width: 510px;           
+    } 
+
+}
+
+@media screen and (max-width: 400px) {
+
+    footer {
+        width: 510px;
+            
+    }
+
+
+}
+
+
+@media screen and (max-width: 280px) {
+    header {
+        width: 1000px; 
+                   
+    } 
+    footer {
+        width: 1000px; 
+                   
+    }
+    #lateral{
+        display: block;
+        background-color: rgba(128, 128, 128, 0.8);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left: -100%;
+        z-index: 100;
+        transition: left 1s;
+    }
+
+    #lateral:target {
+        left: 0;
+    }
+
+    .jam-close {
+        display: block;
+    }
+
+}
+

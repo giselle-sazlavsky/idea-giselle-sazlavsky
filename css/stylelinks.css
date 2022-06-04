@@ -194,11 +194,7 @@ a{
        padding: 2rem 2rem 2rem 2rem;
            
    }
-   .whatsapp img {
-       width: 4.2rem;
-       height: 3rem;
-       position: absolute;
-   }
+   
    #banner {
        width: 100%;
        margin-top: 0rem;
@@ -238,3 +234,99 @@ a{
 
 
 }
+
+@media screen and (max-width: 400px) {
+      
+    footer {
+        width: 100%;  
+
+    }
+   
+    #banner {
+        width: 100%;
+
+    }
+
+    .grid__imagen {
+        width: 80%;
+        vertical-align: middle;
+        padding-right: 0;
+        padding-left: 3rem;
+        overflow: hidden;
+        float: none;
+    }
+
+    .estilo1 {
+        float: left;
+        width: 70%;
+        padding-right: 0;
+        overflow: hidden;
+
+     }
+    
+    .grid__hijo {
+        width: 70%;
+        padding-right: 0;
+        overflow: hidden;
+    }
+
+    .whatsapp img {
+        z-index: 0;
+        position: fixed;
+      
+    }
+
+    .grid__hijo:hover {
+        transform: scale(1.1); 
+        width: 70%;
+        padding-right: 0;
+        overflow: hidden;
+        
+     }
+ 
+ 
+ }
+
+ @media screen and (max-width: 280px) {
+    footer {
+        width: 100%;
+            
+    }
+    .grid__imagen {
+        width: 80%;
+        vertical-align: middle;
+        float: none;
+        padding-left: 3rem;
+    
+        padding-right: 0;
+        overflow: hidden;
+    }
+    .estilo1 {
+        float: left;
+        width: 50%;
+        padding-right: 0;
+        overflow: hidden;
+
+     }
+
+     .grid__hijo {
+        width: 50%;
+        padding-right: 0;
+        overflow: hidden;
+    }
+
+    .whatsapp img {
+        z-index: 0;
+        position: fixed;
+      
+    }
+
+    .grid__hijo:hover {
+        transform: scale(1.1); 
+        width: 50%;
+        padding-right: 0;
+        overflow: hidden;
+        
+     }
+
+ }

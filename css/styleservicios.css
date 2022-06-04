@@ -276,3 +276,78 @@ main {
    }
    
 }
+
+@media screen and (max-width: 400px) {
+   footer {
+       width: 100%;
+           
+   }
+   
+
+   .tarjeta{
+      background-color: rgba(0, 0, 0, 0.259);
+      color: white;
+      width: 70%;
+      height: 350px;
+      padding: 15px 15px 15px 15px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 0,5rem;
+   }
+
+   main {
+      padding-top: 150px;
+   }
+
+   .grid__hijo:hover {
+      transform: scale(1.0); 
+      background-color:black;
+      padding: 8px;
+      height: 510px;
+   }
+   
+}
+
+@media screen and (max-width: 280px) {
+   footer {
+       width: 100%;
+           
+   }
+   
+
+   .tarjeta{
+      background-color: rgba(0, 0, 0, 0.259);
+      color: white;
+      width: 50%;
+      height: 180px;
+      padding: 10px 10px 10px 10px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 1rem 1rem 1rem 1rem;
+   }
+
+   main {
+      padding-top: 50px;
+   }
+
+   .grid__hijo:hover {
+      transform: scale(1.0); 
+      background-color:black;
+      padding: 8px;
+      height: 600px;
+   }
+
+   .tarjeta__parrafo{
+      text-align: center;
+      
+   }
+   
+   .tarjeta__parrafo2 {
+      text-align: center;
+      overflow: hidden;
+      
+   }
+
+
+   
+}
